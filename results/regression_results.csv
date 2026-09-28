@@ -1,0 +1,7 @@
+model,MAE,RMSE,R squared,direction right,correlation
+Baseline (always the average),0.0632,0.0827,-0.1196,0.6026,0.0382
+Ridge,0.064,0.083,-0.1248,0.5967,0.0772
+Lasso,0.0638,0.0829,-0.1209,0.596,0.0777
+Random Forest,0.064,0.083,-0.1229,0.6026,0.0843
+LightGBM,0.0731,0.0935,-0.4295,0.5494,0.0522
+LightGBM (simplified),0.0628,0.0813,-0.0784,0.6147,0.0939

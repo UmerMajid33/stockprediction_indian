@@ -1,0 +1,8 @@
+.streamlit/secrets.toml
+__pycache__/
+*.pyc
+.DS_Store
+
+# Report files
+*.pdf
+*.docx

@@ -1,0 +1,141 @@
+{
+  "features": [
+    "month",
+    "return_skew_21d",
+    "rsi_7",
+    "stoch_k_minus_d",
+    "volatility_ratio",
+    "day_range",
+    "day_of_month",
+    "macd_hist_change"
+  ],
+  "regime_features": [
+    "volatility_21d",
+    "atr_relative",
+    "adx",
+    "close_vs_sma50",
+    "bollinger_width",
+    "rsi_14",
+    "return_21d",
+    "return_skew_21d"
+  ],
+  "regime_names": {
+    "0": "Group 0: busy, price below average",
+    "1": "Group 1: quiet, price above average",
+    "2": "Group 2: busy, price above average",
+    "3": "Group 3: quiet, price below average"
+  },
+  "horizon": 21,
+  "lags": [
+    1,
+    2,
+    3,
+    5,
+    10
+  ],
+  "ticker_trained_on": "INFY.NS",
+  "stock_name": "Infosys",
+  "volume_available": true,
+  "trained_rows": 6528,
+  "train_start": "1996-10-17",
+  "train_end": "2026-08-28",
+  "cv_metrics": {
+    "accuracy": 0.5983455882352942,
+    "balanced accuracy": 0.550424809413544,
+    "precision": 0.6326819346734713,
+    "recall": 0.8154252410776085,
+    "f1": 0.7071561651124891,
+    "roc auc": 0.5638656374752257,
+    "pr auc": 0.6403507163768941,
+    "mcc": 0.12086378639270315,
+    "kappa": 0.10605640142993429
+  },
+  "majority_baseline": 0.6025735294117648,
+  "best_model_name": "Random Forest",
+  "horizon_table": [
+    {
+      "days ahead": 1,
+      "baseline": 0.512,
+      "accuracy": 0.5111,
+      "above baseline": -0.0009,
+      "mcc": 0.0239,
+      "auc": 0.5142,
+      "independent obs": 6539
+    },
+    {
+      "days ahead": 2,
+      "baseline": 0.5273,
+      "accuracy": 0.5177,
+      "above baseline": -0.0096,
+      "mcc": 0.031,
+      "auc": 0.5192,
+      "independent obs": 3269
+    },
+    {
+      "days ahead": 3,
+      "baseline": 0.5472,
+      "accuracy": 0.5245,
+      "above baseline": -0.0227,
+      "mcc": 0.0407,
+      "auc": 0.5264,
+      "independent obs": 2179
+    },
+    {
+      "days ahead": 5,
+      "baseline": 0.5608,
+      "accuracy": 0.5146,
+      "above baseline": -0.0462,
+      "mcc": 0.0236,
+      "auc": 0.5192,
+      "independent obs": 1307
+    },
+    {
+      "days ahead": 10,
+      "baseline": 0.5874,
+      "accuracy": 0.5254,
+      "above baseline": -0.062,
+      "mcc": -0.004,
+      "auc": 0.5014,
+      "independent obs": 653
+    },
+    {
+      "days ahead": 21,
+      "baseline": 0.6028,
+      "accuracy": 0.5467,
+      "above baseline": -0.0561,
+      "mcc": 0.0516,
+      "auc": 0.5432,
+      "independent obs": 310
+    }
+  ],
+  "regime_forward_stats": [
+    {
+      "regime": "Group 0: busy, price below average",
+      "n": 440,
+      "mean_fwd_ret": 0.0693,
+      "std_fwd_ret": 0.1405,
+      "pct_up": 0.7091
+    },
+    {
+      "regime": "Group 1: quiet, price above average",
+      "n": 3841,
+      "mean_fwd_ret": 0.0163,
+      "std_fwd_ret": 0.09,
+      "pct_up": 0.5931
+    },
+    {
+      "regime": "Group 2: busy, price above average",
+      "n": 691,
+      "mean_fwd_ret": 0.0624,
+      "std_fwd_ret": 0.1398,
+      "pct_up": 0.6845
+    },
+    {
+      "regime": "Group 3: quiet, price below average",
+      "n": 1556,
+      "mean_fwd_ret": 0.0073,
+      "std_fwd_ret": 0.0882,
+      "pct_up": 0.5604
+    }
+  ]
+}

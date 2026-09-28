@@ -1,0 +1,5 @@
+algorithm,groups,noise,silhouette,davies bouldin
+KMeans,4,0,0.2693,1.2758
+Gaussian Mixture,4,0,0.2157,1.4077
+Agglomerative,4,0,0.2834,1.2176
+DBSCAN,1,641,,

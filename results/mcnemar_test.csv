@@ -1,0 +1,4 @@
+method,only baseline right,only variant right,p-value,significant
+SMOTE,500,418,0.0075,True
+BorderlineSMOTE,475,440,0.261,False
+class weights,426,350,0.0071,True

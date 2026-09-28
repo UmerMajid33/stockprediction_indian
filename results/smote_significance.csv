@@ -1,0 +1,13 @@
+method,metric,without,with,change,effect size,p-value,folds improved,significant
+SMOTE,accuracy,0.5359,0.5221,-0.0138,-0.212,0.0645,2,False
+SMOTE,f1,0.6308,0.5918,-0.0389,-0.514,0.002,0,True
+SMOTE,roc auc,0.517,0.5208,0.0037,0.048,0.4316,7,False
+SMOTE,mcc,0.0308,0.0268,-0.004,-0.036,0.6953,4,False
+BorderlineSMOTE,accuracy,0.5359,0.53,-0.0059,-0.091,0.4902,3,False
+BorderlineSMOTE,f1,0.6308,0.6012,-0.0296,-0.4,0.0059,1,True
+BorderlineSMOTE,roc auc,0.517,0.5211,0.0041,0.055,0.375,5,False
+BorderlineSMOTE,mcc,0.0308,0.0439,0.013,0.122,0.4922,6,False
+class weights,accuracy,0.5359,0.5231,-0.0128,-0.214,0.1543,3,False
+class weights,f1,0.6308,0.5914,-0.0393,-0.585,0.0039,1,True
+class weights,roc auc,0.517,0.5154,-0.0016,-0.021,0.6953,3,False
+class weights,mcc,0.0308,0.0357,0.0049,0.046,0.7695,6,False
